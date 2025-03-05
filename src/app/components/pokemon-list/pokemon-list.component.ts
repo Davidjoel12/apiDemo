@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // Importa RouterModule
 import { PokemonService } from '../../service/api.service';
 
 @Component({
   selector: 'app-pokemon-list',
+  standalone: true,
+  imports: [CommonModule, RouterModule], 
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css']
 })
