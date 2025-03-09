@@ -9,7 +9,7 @@ import { PokemonService } from './service/api.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PokemonListComponent, PokemonDetailComponent, CommonModule, HttpClient],
+  imports: [RouterOutlet, PokemonListComponent, PokemonDetailComponent, CommonModule],
   providers: [PokemonService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
